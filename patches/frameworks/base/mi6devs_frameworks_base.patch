@@ -68,16 +68,16 @@ index 28d6fd6..992ab0c 100755
 +    <bool name="config_sms_authorization_enabled">false</bool>
  </resources>
 diff --git a/core/res/res/values/symbols.xml b/core/res/res/values/symbols.xml
-index 7154e94124c..f14a20c2bd4 100755
+index f119aef..d47c5fb 100755
 --- a/core/res/res/values/symbols.xml
 +++ b/core/res/res/values/symbols.xml
 @@ -2851,4 +2851,7 @@
-   <java-symbol type="bool" name="use_lock_pattern_drawable" />
-   <java-symbol type="drawable" name="lockscreen_notselected" />
-   <java-symbol type="drawable" name="lockscreen_selected" />
-+
+   <!-- Quick settings tiles columns and rows config -->
+   <java-symbol type="integer" name="config_qs_num_rows_landscape_default"/>
+ 
 +  <java-symbol type="integer" name="config_sms_authorization_timeout_ms" />
 +  <java-symbol type="bool" name="config_sms_authorization_enabled" />
++
  </resources>
 diff --git a/telephony/java/com/android/internal/telephony/ISmsSecurityAgent.aidl b/telephony/java/com/android/internal/telephony/ISmsSecurityAgent.aidl
 new file mode 100644
