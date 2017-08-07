@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <project remote="caf" name="kernel/msm-4.4" path="kernel/xiaomi/msm8998" revision="d51b6bb2a50879a1ebc426c5f30563f74501bd4f" upstream="kernel.lnx.4.4.r13-rel"/>
+
+  <project name="android_hardware_qcom_display-caf-msm8998" path="hardware/qcom/display-caf-msm8998" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_qcom_audio-caf-msm8998" path="hardware/qcom/audio-caf-msm8998" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_qcom_media-caf-msm8998" path="hardware/qcom/media-caf-msm8998" remote="omnirom" revision="android-7.1" />
+  <project name="android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="omnirom" revision="android-7.1" />
+  <project name="vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="omnirom" revision="android-7.1" />
+  <project name="android_external_libnfnetlink" path="external/libnfnetlink" remote="omnirom" revision="android-7.1" />
+  <project name="android_external_libnetfilter_conntrack" path="external/libnetfilter_conntrack" remote="omnirom" revision="android-7.1" />
+  <project name="android_device_qcom_caf-sepolicy" path="device/qcom/sepolicy" remote="omnirom" revision="android-7.1" />
+  <project name="android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="omnirom" revision="android-7.1" />
+  <project name="android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="omnirom" revision="android-7.1" />
+  <project name="android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="omnirom" revision="android-7.1" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="omnirom" revision="android-7.1" />
+  <project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="omnirom" revision="android-7.1" />
+  <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="omnirom" revision="android-7.1" />
+  <project name="android_external_json-c" path="external/json-c" remote="omnirom" revision="android-7.1" />
+
+<!-- OpenGapps Project -->
+<remote name="opengapps" fetch="https://github.com/opengapps/"  />
+
+<project path="vendor/google/build" name="aosp_build" revision="master" remote="opengapps" />
+<project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+
+<!-- arm64 depends on arm -->
+<project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
+<project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
+
+</manifest>

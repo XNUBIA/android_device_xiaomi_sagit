@@ -93,7 +93,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    $(LOCAL_PATH)/audio/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/listen_platform_info.xml:system/etc/listen_platform_info.xml \
@@ -120,7 +119,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -136,6 +135,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8998 \
     liboverlay \
     libtinyxml
+
+# FileManager
+PRODUCT_PACKAGES += \
+    StorageManager
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
@@ -242,6 +245,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.sensors.sh \
@@ -267,10 +271,6 @@ PRODUCT_PACKAGES += \
 # Messaging
 PRODUCT_PACKAGES += \
     messaging \
-    Stk
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml \
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -280,8 +280,8 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \
-    hostapd \
     readmac \
+    hostapd \
     dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf
