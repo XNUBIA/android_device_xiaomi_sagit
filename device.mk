@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+# Device settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # FileManager
 PRODUCT_PACKAGES += \
     StorageManager
