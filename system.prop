@@ -202,6 +202,8 @@ persist.sys.sensors.pug=false
 persist.sys.sensors.spg=false
 
 #Enable for IMS feature
+persist.volte_enabled_by_hw=1
+persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.radio.VT_HYBRID_ENABLE=1
