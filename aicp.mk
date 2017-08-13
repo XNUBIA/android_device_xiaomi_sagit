@@ -33,7 +33,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ota.romname=AICP-SAGIT \
-    ro.ota.manifest=ota.xml \
+    ro.ota.manifest=https://raw.githubusercontent.com/Verevka/android_device_xiaomi_sagit/test/OTA/ota.xml\
     ro.ota.version=$(shell date +%Y%m%d)
 
 PRODUCT_PACKAGES += OTAUpdates
